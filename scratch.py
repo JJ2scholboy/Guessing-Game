@@ -35,6 +35,10 @@ def raten():
         #else:
          #   continue
 
+def save_score(highscore):
+    #speichert den Highscore in einer Datei ab
+
+
 #try:
 while not user_ends: #while not user_wins:   #while(solange) Bedingung:     not b / b = False ist das gleiche
     number = random.randint(1, 100)

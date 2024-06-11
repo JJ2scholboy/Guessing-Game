@@ -37,7 +37,21 @@ def raten():
 
 def save_score(highscore):
     #speichert den Highscore in einer Datei ab
+    pass
+def lesen
+    datei = open("NummerTest.txt", "r") #r steht für read
+    highscore = datei.read().lstrip("[").strip("]").lstrip("'.'")
+    highscore = highscore.split(",")
+    datei.close()
+    return highscore
+    pass
 
+
+def schreiben
+    datei = open("NummerTest.txt", "w") #w steht für write
+    datei.write(str(highscore))
+    datei.close()
+    pass
 
 #try:
 while not user_ends: #while not user_wins:   #while(solange) Bedingung:     not b / b = False ist das gleiche

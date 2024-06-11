@@ -41,13 +41,16 @@ while not user_ends: #while not user_wins:   #while(solange) Bedingung:     not 
     print(f"DEBUG: Number ist {number}")
     user_wins = False
     raten()
+
     try:
-        neustart = (input("Möchte Sie erneut spielen: ja oder nein "))
+        neustart = (input("Wenn Sie nicht mehr spielen möchten sagen Sie: nein "))
     except:
-        print("Falsche eingabe. Nur (ja) oder (nein) ")
+        print("Falsche eingabe Nur (ja) oder (nein) ")
         continue
     if neustart == "nein":
         user_ends = True
+    else: neustart == "ja"
+        #user_ends = False
 
         #continue springt zur letzten while schleife/ break springt aus der while schleife raus
 
